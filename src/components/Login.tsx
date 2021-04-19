@@ -7,10 +7,12 @@ interface LoginFormData {
 
 export default function Login() {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
-  const onSubmit = (formData: LoginFormData):void => console.log(formData)
 
-  console.log(`email: ${watch("email")}`)
-  console.log(`password: ${watch("password")}`)
+  const onSubmit = (formData: LoginFormData):void => console.log(formData);
+
+  console.log(`email: ${watch("email")}`);
+  console.log(`password: ${watch("password")}`);
+  console.log(errors);
 
   return (
     <div>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import './App.css';
 import Profile from "./components/Profile";
 import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 interface UserInterface {
   id: string;
@@ -21,6 +22,7 @@ function App():JSX.Element {
         userAuthenticated={userAuthenticated} 
       />
       <Login/>
+      <Signup/>
     </div>
   );
 }
